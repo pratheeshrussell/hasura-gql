@@ -1,0 +1,12 @@
+query OrderQuery {
+ orders(where: {employeeid: {_eq: 2}}) {
+   customerid
+   orderdetails(distinct_on: productid) {
+     product_info: product {
+       productname
+     }}
+   orderCount: orderdetails_aggregate {
+     aggregate {
+       count
+     }}
+ }}

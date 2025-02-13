@@ -1,0 +1,11 @@
+mutation CustomerNameUpdate {
+  update_customers(
+    where: {customerid: {_eq: 2}}, 
+    _set: {customername: "Anna"}
+    ) {
+    affected_rows
+    returning {
+      customername
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query customerSub($eid: Int) {
+  customers(where: {customerid: {_eq: $eid}}) {
+    customername
+  }
+}
+
+# var
+# { "eid": 2 }

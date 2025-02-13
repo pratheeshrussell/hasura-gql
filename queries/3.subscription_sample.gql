@@ -1,0 +1,5 @@
+subscription customerSub {
+  customers(where: {customerid: {_eq: 2}}) {
+    customername
+  }
+}
