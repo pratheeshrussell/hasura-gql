@@ -1,0 +1,17 @@
+name: Issue in query
+description: Report issues in Gql query
+title: "[GQL]: "
+labels: ["gql"]
+body:
+  - type: markdown
+    attributes:
+      value: '# GQL Issue'
+  - type: textarea
+    id: description
+    attributes:
+      label: Mention the change you are expecting
+      description: |
+        Please provide a clear description.
+
+    validations:
+      required: true
